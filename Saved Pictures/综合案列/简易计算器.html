@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易计算器</title>
+    <style type="text/css">
+        table {
+            margin: 0 auto;
+            border: 1px solid rgb(16, 47, 185);
+            text-align: center;
+            background-color: aquamarine;
+        }
+        
+        input.text {
+            border-width: 1px;
+            border-style: solid;
+            width: 160px;
+        }
+    </style>
+
+
+    <script language="javascript">
+        function compute(op) {
+            var num1, num2;
+            num1 = parseFloat(document.form.one.value);
+            num2 = parseFloat(document.form.tow.value);
+            if (op == "+")
+                document.from.textResult.value = num1 = num2;
+        }
+    </script>
+</head>
+
+<body>
+    <from action="" method="post" name="from" id="from">
+        <table>
+            <tr>
+                <td>简易计算器</td>
+            </tr>
+            <tr>
+                <td>第一个数</td>
+                <td colspan="3"><input type="text" name="one" id="one"></td>
+            </tr>
+            <tr>
+                <td>第二个数</td>
+                <td colspan="3"><input type="text" name="tow" id="tow"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" name="add" id="add" onClick="compute('+')" /></td>
+                <td><input type="button" value="-" name="sup" id="sup" onClick="compute('-')"></td>
+                <td><input type="button" value="*" name="mul" id="mul" onClick="compute('*')"></td>
+
+                <td><input type="button" value="/" name="chu" id="chu" onClick="compute('/')"></td>
+            </tr>
+            <tr>
+                <td>结果</td>
+                <td colspan="3"><input type="text" name="textResult" id="textResult"></td>
+            </tr>
+        </table>
+
+
+
+
+    </from>
+</body>
+
+</html>

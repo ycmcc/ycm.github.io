@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册页面</title>
+    <style>
+        body {
+            background: url(./2.jpg.jpg);
+            background-size: cover;
+        }
+        
+        .demo {
+            margin-top: 200px;
+            margin-left: 500px;
+        }
+        .l{
+          position: absolute;
+          top: 280px;
+          left: 590px;
+        }
+        .c{
+          position: absolute;
+          top: 280px;
+          left: 650px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <form action="">
+            <div class="demo">
+
+               用户名： <input id="zh" type="text" placeholder="请输入账号" value=""  ><br>
+                 密码：&nbsp;&nbsp;&nbsp; <input type="password" placeholder="请输入密码" id="psw">
+                 <button class="l" onclick="val()">login</button>
+                 <button type="reset" class="c">重置</button>
+            </div>
+        </form>
+    </div>
+    <script>
+      function val(){
+      var val = document.getElementById('zh').value;
+      // document.write(val)
+      var psw = document.getElementById('psw').value;
+      if(val.length == ""){
+        alert('账号不能为空！')
+      }else if (val.length > 12){
+        alert('账号长度不能超过12位！')
+      }
+      else if (val.length <= 6){
+        alert('账号长度不能小于6位！')
+      }
+      else{
+        return alert('设置成功！')
+      }
+      
+      if(psw.length == ""){
+        alert('密码不能为空！')
+      }else if(psw.length>20){
+        alert('密码不能大于20')
+      }
+      else if (psw.length <= 6){
+        alert('密码不能小于6位！')
+      }
+      else {
+        alert('设置密码成功！')
+      }
+     }
+    </script>
+</body>
+
+</html>

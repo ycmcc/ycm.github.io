@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片阴影效果</title>
+    <style>
+        #box {
+            position: relative;
+            -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            padding: 10px;
+            background: white;
+        }
+        /* Make the image fit the box */
+        
+        #box img {
+            width: 100%;
+            border: 1px solid #8a4419;
+            border-style: inset;
+        }
+        
+        #box {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            /* hide shadow behind image */
+            -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            width: 70%;
+            left: 15%;
+            /* one half of the remaining 30% */
+            height: 100px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <img src="../2.jpg.jpg" alt="xx" width="600" height="400" /> </div>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>form novalidate 属性</h1>
+
+    <p>novalidate 属性指示提交表单时不对输入进行验证：</p>
+
+    <form action="/demo/html/action_page.php" novalidate>
+        <label for="mima">小金库密码：</label>
+        <input type="mimas" id="mimal" name="mimas"><br><br>
+        <input type="submit">
+    </form>
+
+    <p><b>注释：</b>Safari 不支持 form 标签的 novalidate 属性。</p>
+    <form>
+        登录口:<input type="text" name=" "> <br>密码:&#12288;<input type="number" name=" "><br>
+        <!--password:密码框，用户看不见-->
+        <!--text:文本框，可以看见的-->
+        <!--input:输入框-->
+        是 <input type="radio" name="shi"><label fro="shi">否<input type="radio">
+        <!--radio:单选框-->
+        音乐 <input type="checkbox">舞蹈<input type="checkbox">武术<input type="checkbox">
+        <!--checkbox:复选框-->
+        <input type="submit" value="注册账户">
+        <!--submit:提交按钮。可以将数据发送给后台服务器-->
+        <input type="reset" value="重新登陆">
+        <!--reset:重置按钮，可以清除表单中所有数据-->
+        <input type="button" value="短信验证">
+        <!--button:可点击按钮-->
+        上传头像： <input type="file"><br>
+        <!--file:定义字段和浏览按钮，可供上传文件-->
+        <input type="image " value="图片 ">
+        <!--image:图片提交按钮-->
+    </form>
+    <h3>label标签使用</h3>
+    <label for="text">用户名</label><input type="text" id="text">
+        <input type="radio" id="nan" name="sex"><label for="nan">男</label>
+        <input type="radio" id="nv" name="sex"><label for="nv">女</label>
+        <!--label:元素定义标注标签-->
+        <form>
+
+            下拉框:
+            <select>
+                <option>背景</option>
+                <option>音乐</option>
+                <option>照片</option>
+                <option>视频</option>
+            </select>
+        </form>
+        <textarea>反馈</textarea>
+        <!--textarea:文件域-->
+</body>
+
+</html>

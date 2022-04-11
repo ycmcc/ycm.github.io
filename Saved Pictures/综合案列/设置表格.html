@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+</head>
+<style>
+    table,
+    td th {
+        width: 500px;
+        height: 300px;
+        border: 1px solid rgb(221, 41, 71);
+        text-align: center;
+        /*合并相连的边框*/
+        border-collapse: collapse;
+    }
+    
+    body {
+        background-color: rgb(8, 226, 37);
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    ul {
+        text-align: left;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <h1>设置颜色字体大小</h1>
+    <font siz="9" color="blue" face="楷体">设置文字大小</font>
+    <p align="right">床前明月光</p>
+    <h2 align="left">于是地上霜</h2>
+    <p align="center">举头望明月</p><i align="center">低头思故乡</i>
+    <h2>
+        <font color="green">信息表</font>
+        <!--有序列表-->
+    </h2>
+    <table cellspacing="0" cellpadding="5">
+        <!--cellpadding:是设置表格内容与边框的距离-->
+        <!--cellspacing:市设置表格与表格的空隙-->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>地址</th>
+                <th>电话</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张万森</td>
+                <td>男</td>
+                <td>21</td>
+                <td>贵州省贵阳市</td>
+                <td>18654323545</td>
+            </tr>
+            <tr>
+                <td>王丽</td>
+                <td>女</td>
+                <td>16</td>
+                <td>浙江省</td>
+                <td>18654323545</td>
+            </tr>
+            <tr>
+                <td>吴鑫</td>
+                <td>男</td>
+                <td>18</td>
+                <td>贵州省贵阳市</td>
+                <td>18654323545</td>
+            </tr>
+            <tr>
+                <td>镇里</td>
+                <td>女</td>
+                <td>17</td>
+                <td>贵州省贵阳市</td>
+                <td>18654323545</td>
+            </tr>
+        </tbody>
+        <!--<tr>一般位于第一行-->
+        <!--thead:表格的头部，内部必须有<tr>标签-->
+        <!--tbody:表格的主体部分，内部必须有<tr>标签-->
+        <!--以上都是放在<table>标签里面--></table>
+    <h1>
+        <font color="yellow" siz="5" face="楷体">书籍阅读趋势</font>
+    </h1>
+    <table cellspacing="0" cellpadding="10" border="1">
+        <tr>
+            <th>排行</th>
+            <th>书名</th>
+            <th>趋势</th>
+            <th>阅读量</th>
+            <th>书籍链接</th>
+        </tr>
+        <tr>
+            <th>
+                <font color="red">1</font>
+            </th>
+            <td>面纱</td>
+            <td><img src="../man.jpg" alt="xx" width="15" heigh="15" /></td>
+            <td>1300</td>
+            <td><a href="#">知乎阅读</a></td>
+        </tr>
+        <tr>
+            <th>
+                <font color="red">2</font>
+            </th>
+            <td>加勒比海盗</td>
+            <td><img src="../man.jpg" alt="xx" width="15" heigh="15" /></td>
+            <td>5559</td>
+            <td><a href="#">贴吧</a></td>
+        </tr>
+        <tr>
+            <th>
+                <font color="red">3</font>
+            </th>
+            <td>童话故事</td>
+            <td><img src="../man.jpg" alt="xx" width="15" heigh="15" /></td>
+            <td>9999</td>
+            <td><a href="#">猫耳</a></td>
+        </tr>
+        <tr>
+            <th>
+                <font color="red">4</font>
+            </th>
+            <td>孙子兵法</td>
+            <td><img src="../man.jpg" alt="xx" width="15" heigh="15" /></td>
+            <td>1632</td>
+            <td><a href="#">腾讯</a></td>
+        </tr>
+    </table>
+    <h3 align="center">无序列表</h3>
+    <ul>
+        <li>
+            <font color="green">四大天王</font>
+        </li>
+        <li>
+            <font color="red">四大天王</font>
+        </li>
+        <li>
+            <font color="blue">四大天王</font>
+        </li>
+    </ul>
+    <h3>自定义列表</h3>
+    <dll><dt><dd>五指山1</dd><dd>五指山2</dd><dd>五指山3</dd></dt></dll>
+    <h3>单元格合并</h3>
+    <table border="1" cellspacing="0" cellpadding="15" width="300" heigh="399" align="center">
+        <tr>
+            <td colspan="2"></td>
+            <!--rowspan:行合并-->
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <!--colspan:列合并-->
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+    </table>
+
+</body>
+
+</html>

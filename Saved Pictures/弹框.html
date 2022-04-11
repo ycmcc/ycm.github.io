@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>else-if语句</title>
+</head>
+
+<style>
+    .sun {
+        height: 1100px;
+        width: 1500px;
+        background-image: radial-gradient(circle, red, yellow, rgb(13, 148, 226));
+    }
+</style>
+
+<body>
+    <script language="javascript">
+        var now = new Date();
+        // console.log(now);
+        var hour = now.getHours();
+        // console.log(hour);
+        if (hour > 5 && hour < 7)
+            alert("早上好，我就是不起床");
+        else if (hour > 7 && hour < 11)
+            alert("上午好，太阳高高神奇");
+        else if (hour > 11 && hour < 13)
+            alert("下午好，干番茄");
+        else(hour > 13 && hour < 15)
+        alert("晚上好，不熬夜");
+    </script>
+<div class="sun"></div>
+</html>

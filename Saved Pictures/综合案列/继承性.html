@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承性</title>
+</head>
+<style>
+    div {
+        color: rgb(34, 190, 73);
+        font-size: 12px;
+        /*这个1.5就是当前元素文字大小font-siz的1.15倍   p子元素也继承了body行高的1.5倍*/
+    }
+    
+    body {
+        color: red;
+        font-size: 12px/1.5;
+    }
+    
+    h1 {
+        font-size: 16px/1.5;
+        /*当前文字的行高是16x1.5*/
+    }
+</style>
+
+<body>
+    子元素可以继承父亲的样式有(text,font,line)
+    <div>
+        <p>继承性经常性我蛾子继承我哈哈哈哈</p>
+    </div>
+    <h1>行高的继承性</h1>
+    <div>小呀小苹果</div>
+    <p>怎么爱你都不嫌多</p>
+
+</body>
+
+</html>
